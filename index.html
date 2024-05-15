@@ -1,50 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>YouTube Page</title>
-    <link href="assets/css/style.css" rel="stylesheet" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo no YouTube</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
     <header>
-      <div class="header-search">
-        <div id="logo-menu">
-          <img id="menu" src="assets/images/menu.png" alt="Menu" />
-          <img
-            id="ytb-logo"
-            src="assets/images/youtube 1.png"
-            alt="YouTube Logo"
-          />
+        <div class="menu-logo">
+            <img src="assets/images/menu.png" alt="Menu">
+            <img src="assets/images/youtube 1.png" alt="YouTube Logo">
         </div>
-        <div id="search-button">
-          <input type="text" id="input-text" />
-          <img src="assets/images/search.png" alt="Search Img" />
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar....">
+            <button>
+                <img src="assets/images/search.png" alt="Buscar">
+            </button>
         </div>
-        <div id="icons-avatar">
-          <img src="assets/images/bell.png" alt="Bell" id="bell" />
-          <img src="assets/images/video.png" alt="Video" id="video" />
-          <img src="assets/images/Avatar.png" alt="Avatar" id="avatar" />
+        <div class="user-options">
+            <img src="assets/images/Avatar.png" alt="Avatar">
+            <img src="assets/images/bell.png" alt="Notificações">
+            <img src="assets/images/video.png" alt="Vídeo">
         </div>
-      </div>
     </header>
     <main>
-      <div class="main-container">
-        <div class="video-container">
-          <iframe src=""></iframe>
-          <h2>Video Dio Innovation One</h2>
-          <div id="icons-video">
-            <img
-              src="assets/images/Channel Avatar.png"
-              alt="channel avatar"
-              id="channel-avatar"
-            />
-            <p>DIO</p>
+        <section class="video-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <h2>DIO Innovation ONE</h2>
+            <div class="video-details">
+                <img src="assets/images/Channel Avatar.png" alt="Logo do Canal">
+                <button>
+                    <img src="assets/images/thumbs-up.png" alt="Gostei">
+                    <p>Gostei</p>
+                </button>
+                <button>
+                    <img src="assets/images/thumbs-down.png" alt="Não Gostei">
+                    <p>Não Gostei</p>
+                </button>
+                <button>
+                    <img src="assets/images/share-2.png" alt="Compartilhar">
+                    <p>Compartilhar</p>
+                </button>
+            </div>
+            <div class="description">
+                <p>Descrição do vídeo...</p>
+            </div>
+        </section>
+        <aside class="related-videos">
+            <div class="related-video">
+                <img src="assets/images/Thumb.png" alt="Thumbnail 1">
+                <p>Ciência de dados Unimed</p>
+            </div>
+            <div class="related-video">
+                <img src="assets/images/image 12.png" alt="Thumbnail 2">
+                <p>Scrum talks</p>
+            </div>
+            <div class="related-video">
+                <img src="assets/images/image 13.png" alt="Thumbnail 3">
+                <p>EY Fast Track</p>
+            </div>
+            <div class="related-video">
+              <img src="assets/images/image 14.png" alt="Thumbnail 4">
+              <p>Project Planning</p>
           </div>
+          <div class="related-video">
+            <img src="assets/images/image 15.png" alt="Thumbnail 5">
+            <p>How to learn python from scratch</p>
         </div>
-        <div class="nav-container"></div>
-      </div>
+        </aside>
     </main>
-    <footer></footer>
-  </body>
+</body>
 </html>
